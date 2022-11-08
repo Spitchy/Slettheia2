@@ -2,6 +2,7 @@
 import { jsx } from "theme-ui";
 import DonationForm from "components/donation-form";
 import ContactForm from "components/contactForm";
+import Contact from "components/Contact";
 
 const Doner = () => {
   return (
@@ -9,19 +10,19 @@ const Doner = () => {
       id="innsamling"
       className="w-full h-auto max-w-[1440px] p-4 mb-32 mx-auto"
     >
-      <div className="mx-auto flex flex-col justify-center items-center mt-8 mb-12">
-        <p className="my-2 font-semibold text-xl md:text-4xl">
+      <div className="flex flex-col items-center justify-center mx-auto mt-8 mb-12">
+        <p className="my-2 text-xl font-semibold md:text-4xl">
           Støtt saken med Vipps!
         </p>
-        <p className="text-sm md:text-lg my-2 text-center">
+        <p className="my-2 text-sm text-center md:text-lg">
           Firma? Større sum? Legg igjen din info under så kontakter vi deg!
         </p>
       </div>
-      <div className="flex flex-col gap-12 lg:flex-row mx-0 md:mx-8 lg:mx-20 justify-center">
+      <div className="flex flex-col justify-center gap-12 mx-0 lg:flex-row md:mx-8 lg:mx-20">
         <div className="mx-0 my-4 min-w-[300px] md:min-w-[440px]">
           <DonationForm />
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex items-center justify-center">
           <p>eller</p>
         </div>
         <div className="mx-0 md:mx-4 my-4 min-w-[300px] md:min-w-[440px]">
@@ -30,6 +31,7 @@ const Doner = () => {
             <p></p>
           </div>
           <ContactForm />
+          <Contact />
         </div>
       </div>
     </div>
