@@ -47,62 +47,25 @@ export default function contactForm() {
   };
 
   //   Handling form submit
-  const handleSubmit = async (e) => {
+  async function handleOnSubmit(e) {
     e.preventDefault();
 
-    let isValidForm = handleValidation();
+    const formData = {};
 
-    if (isValidForm) {
-      setButtonText("Sender");
-      const res = await fetch("/api/sendgrid", {
-        body: JSON.stringify({
-          email: email,
-          name: name,
-          company: company,
-          orgnr: orgnr,
-          phone: phone,
-          message: message,
-        }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-        method: "POST",
-      });
+    Array.from(e.currentTarget.elements).forEach((field) => {
+      if (!field.name) return;
+      formData[field.name] = field.value;
+    });
 
-      //await fetch("/api/mail", {
-      //  method: "POST",
-      //  body: JSON.stringify(formData),
-      //});
-
-      const { error } = await res.json();
-      if (error) {
-        console.log(error);
-        setShowSuccessMessage(false);
-        setShowFailureMessage(true);
-        setButtonText("Send");
-
-        // Reset form fields
-        setFullname("");
-        setEmail("");
-        setMessage("");
-        setSubject("");
-        return;
-      }
-      setShowSuccessMessage(true);
-      setShowFailureMessage(false);
-      setButtonText("Send");
-      // Reset form fields
-      setFullname("");
-      setEmail("");
-      setMessage("");
-      setSubject("");
-    }
-    console.log(name, email, phone, company, orgnr, message);
-  };
+    await fetch("/api/mail", {
+      method: "POST",
+      body: JSON.stringify(formData),
+    });
+  }
 
   return (
     <main>
-      <form onSubmit={handleSubmit}>
+      <form method="post" onSubmit={handleOnSubmit}>
         <div className="grid gap-6 mb-6 md:grid-cols-2">
           <div>
             <label

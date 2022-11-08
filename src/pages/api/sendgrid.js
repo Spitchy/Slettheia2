@@ -22,7 +22,7 @@ async function sendEmail(req, res) {
         </div>`,
     });
   } catch (error) {
-    // console.log(error);
+    console.log(error);
     return res.status(error.statusCode || 500).json({ error: error.message });
   }
 

@@ -39,7 +39,7 @@ export default function Footer() {
             <Text as="span">
               &copy; {new Date().getFullYear()} Alle rettigheter forbeholdt -
             </Text>
-            <a href="https://www.rosario.no" Target="_blank">
+            <a href="https://www.rosario.no" target="_blank">
               <Text as="span"> Utviklet av ROSARIO</Text>
             </a>
           </Flex>

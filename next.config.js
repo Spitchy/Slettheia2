@@ -16,7 +16,7 @@ module.exports = withPlugins([optimizedImages], nextConfiguration);
 //   },
 // });
 
-// fra stackoverflow for fiks av fs ?
+// fra stackoverflow fiks av fs ?
 {
   /*
 module.exports = {
