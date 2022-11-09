@@ -82,18 +82,20 @@ export default function contactForm() {
         setButtonText("Send");
 
         // Reset form fields
-        setName("");
+        setFullname("");
         setEmail("");
         setMessage("");
+        setSubject("");
         return;
       }
       setShowSuccessMessage(true);
       setShowFailureMessage(false);
       setButtonText("Send");
       // Reset form fields
-      setName("");
+      setFullname("");
       setEmail("");
       setMessage("");
+      setSubject("");
     }
     console.log(name, email, phone, company, orgnr, message);
   };

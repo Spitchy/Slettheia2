@@ -8,7 +8,35 @@ export default function contactForm() {
   const [orgnr, setOrgnr] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Sending");
+    let data = {
+      name,
+      email,
+      message,
+    };
+    fetch("http://localhost:3000/api/contact", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then((res) => {
+      console.log("Response received");
+      if (res.status === 200) {
+        console.log("Response succeeded!");
+        setSubmitted(true);
+        setName("");
+        setEmail("");
+        setMessage("");
+      }
+    });
+  };
+  /*
   //   Form validation state
   const [errors, setErrors] = useState({});
 
@@ -82,25 +110,27 @@ export default function contactForm() {
         setButtonText("Send");
 
         // Reset form fields
-        setName("");
+        setFullname("");
         setEmail("");
         setMessage("");
+        setSubject("");
         return;
       }
       setShowSuccessMessage(true);
       setShowFailureMessage(false);
       setButtonText("Send");
       // Reset form fields
-      setName("");
+      setFullname("");
       setEmail("");
       setMessage("");
+      setSubject("");
     }
     console.log(name, email, phone, company, orgnr, message);
   };
-
+*/
   return (
     <main>
-      <form onSubmit={handleOnSubmit}>
+      <form>
         <div className="grid gap-6 mb-6 md:grid-cols-2">
           <div>
             <label
@@ -248,9 +278,13 @@ export default function contactForm() {
           type="submit"
           //disabled={true}
           className="text-white bg-[#A29BFE] hover:bg-[#A05BFE] focus:ring-4 focus:outline-none focus:ring-[#A05BFE] font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+          onClick={(e) => {
+            handleSubmit(e);
+          }}
         >
-          {buttonText}
+          Send
         </button>
+        {/*
         <div className="text-left">
           {showSuccessMessage && (
             <p className="my-2 text-sm font-semibold text-green-500">
@@ -263,6 +297,7 @@ export default function contactForm() {
             </p>
           )}
         </div>
+        */}
       </form>
     </main>
   );

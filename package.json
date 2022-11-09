@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": false,
   "scripts": {
+    "devhyper": "nodemon server/index.js",
     "dev": "node server/index.js",
     "build": "next build",
     "serve": "next start",
@@ -17,6 +18,8 @@
     "next-compose-plugins": "^2.2.1",
     "next-optimized-images": "^2.6.2",
     "nextjs-cors": "^2.1.1",
+    "nodemailer": "^6.8.0",
+    "nodemon": "^2.0.20",
     "polished": "^4.0.4",
     "rc-drawer": "^4.1.0",
     "react": "^16.13.1",
