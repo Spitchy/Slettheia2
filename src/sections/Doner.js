@@ -2,7 +2,6 @@
 import { jsx } from "theme-ui";
 import DonationForm from "components/donation-form";
 import ContactForm from "components/contactForm";
-import Contact from "components/Contact";
 
 const Doner = () => {
   return (
@@ -31,7 +30,6 @@ const Doner = () => {
             <p></p>
           </div>
           <ContactForm />
-          <Contact />
         </div>
       </div>
     </div>

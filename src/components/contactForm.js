@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default function contactForm() {
-  // States for contact form fields
+  // States 4 contact form fields
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [company, setCompany] = useState("");
@@ -47,14 +47,14 @@ export default function contactForm() {
   };
 
   //   Handling form submit
-  const handleSubmit = async (e) => {
+  const handleOnSubmit = async (e) => {
     e.preventDefault();
 
     let isValidForm = handleValidation();
 
     if (isValidForm) {
       setButtonText("Sender");
-      const res = await fetch("/api/sendgrid", {
+      const res = await fetch("http://localhost:3000/api/sendgrid", {
         body: JSON.stringify({
           email: email,
           name: name,
@@ -102,11 +102,11 @@ export default function contactForm() {
 
   return (
     <main>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleOnSubmit}>
         <div className="grid gap-6 mb-6 md:grid-cols-2">
           <div>
             <label
-              for="navn"
+              htmlFor="navn"
               className="block mb-2 text-sm font-medium text-gray-900 select-none"
             >
               Navn*
@@ -120,12 +120,12 @@ export default function contactForm() {
               id="name"
               className="block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-[#A29BFE] focus:border-[#A29BFE] "
               placeholder=""
-              required
+              //required
             />
           </div>
           <div>
             <label
-              for="phone"
+              htmlFor="phone"
               className="block mb-2 text-sm font-medium text-gray-900 select-none"
             >
               Telefonnummer*
@@ -140,12 +140,12 @@ export default function contactForm() {
               className="block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-[#A29BFE] focus:border-[#A29BFE] "
               placeholder=""
               pattern="[0-9]{8}"
-              required
+              //required
             />
           </div>
           <div>
             <label
-              for="company"
+              htmlFor="company"
               className="block mb-2 text-sm font-medium text-gray-900 select-none"
             >
               Firma
@@ -163,7 +163,7 @@ export default function contactForm() {
           </div>
           <div>
             <label
-              for="orgnr"
+              htmlFor="orgnr"
               className="block mb-2 text-sm font-medium text-gray-900 select-none"
             >
               Oganisasjonsnummer
@@ -183,7 +183,7 @@ export default function contactForm() {
         </div>
         <div className="mb-6">
           <label
-            for="email"
+            htmlFor="email"
             className="block mb-2 text-sm font-medium text-gray-900 select-none"
           >
             Epost-adresse*
@@ -197,12 +197,12 @@ export default function contactForm() {
             id="email"
             className="block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-[#A29BFE] focus:border-[#A29BFE] "
             placeholder=""
-            required
+            //required
           />
         </div>
         <div className="mb-6">
           <label
-            for="message"
+            htmlFor="message"
             className="block mb-2 text-sm font-medium text-gray-900 select-none"
           >
             Melding
@@ -248,6 +248,7 @@ export default function contactForm() {
             */}
         <button
           type="submit"
+          //disabled={true}
           className="text-white bg-[#A29BFE] hover:bg-[#A05BFE] focus:ring-4 focus:outline-none focus:ring-[#A05BFE] font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
         >
           {buttonText}
