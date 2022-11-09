@@ -5,7 +5,7 @@ import { jsx, Box, Container, Grid, Button, Heading, Text } from "theme-ui";
 import Modal, { CloseButton } from "components/modal/modal";
 import ResponsiveIframe from "components/responsive-iframe";
 import Image from "components/image";
-import videoBanner from "assets/images/video-banner.png";
+import videoBanner from "assets/images/video-banner.PNG";
 import dotPattern from "assets/images/dot-pattern.png";
 import play from "assets/images/icons/play.png";
 import paint1 from "assets/images/paint1.svg";
