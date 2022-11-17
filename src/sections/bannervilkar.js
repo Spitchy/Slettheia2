@@ -1,9 +1,6 @@
 /** @jsx jsx */
 import { jsx, Box, Container } from "theme-ui";
-import Image from "components/image";
-import illustration from "assets/images/illustration1.svg";
 import Vilkar from "components/vilkar";
-import DonationForm from "components/donation-form";
 
 const Banner = () => {
   return (

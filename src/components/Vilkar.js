@@ -1,5 +1,4 @@
 import React from "react";
-import paint2 from "assets/images/paint2.svg";
 import { Text, Heading } from "theme-ui";
 
 function vilkar() {
