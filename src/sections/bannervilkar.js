@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, Box, Container } from "theme-ui";
-import Vilkar from "components/vilkar";
+import Vilkar from "components/vilkar.js";
 
 const Banner = () => {
   return (
