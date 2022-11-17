@@ -22,18 +22,10 @@ const menuItems = [
     path: "#oppdateringer",
     label: "Oppdateringer",
   },
-*/  
-{
-  path: "/vilkar",
-  label: "Vilkår",
-},
-{
-  path: "#oppdateringer",
-  label: "-",
-},
+*/
   {
     path: "/",
-    label: "Tilbake til toppen",
+    label: "Tilbake til forsiden",
   },
 ];
 
