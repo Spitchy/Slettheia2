@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import { jsx, Image } from "theme-ui";
 import { Link } from "components/link";
-import logo from "assets/images/Slettheiaskolelogo2.svg";
-import logoWhite from "assets/images/Slettheiaskolelogo2white.svg";
+import logo from "assets/images/slettheiaskolelogo2.svg";
+import logoWhite from "assets/images/slettheiaskolelogo2white.svg";
 
 export default function Logo({ isWhite, ...props }) {
   return (
