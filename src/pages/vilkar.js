@@ -5,7 +5,7 @@ import theme from "theme";
 import SEO from "components/seo";
 import Banner from "sections/bannervilkar";
 
-export default function Vilkar() {
+function vilkar() {
     return (
     <ThemeProvider theme={theme}>
         <Layout2>
@@ -17,6 +17,7 @@ export default function Vilkar() {
         <Banner />
         </Layout2>
     </ThemeProvider>
-        );
-    }
-    
+    );
+}
+
+export default vilkar;
