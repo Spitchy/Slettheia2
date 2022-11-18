@@ -118,7 +118,7 @@ export default function contactForm() {
               id="name"
               className="block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-[#A29BFE] focus:border-[#A29BFE] "
               placeholder=""
-              //required
+              required
             />
           </div>
           <div>
@@ -138,7 +138,7 @@ export default function contactForm() {
               className="block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-[#A29BFE] focus:border-[#A29BFE] "
               placeholder=""
               pattern="[0-9]{8}"
-              //required
+              required
             />
           </div>
           <div>
@@ -195,7 +195,7 @@ export default function contactForm() {
             id="email"
             className="block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-[#A29BFE] focus:border-[#A29BFE] "
             placeholder=""
-            //required
+            required
           />
         </div>
         <div className="mb-6">
