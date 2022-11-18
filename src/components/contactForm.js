@@ -84,7 +84,10 @@ export default function contactForm() {
         // Reset form fields
         setName("");
         setEmail("");
+        setPhone("");
         setMessage("");
+        setCompany("");
+        setOrgnr("");
         return;
       }
       setShowSuccessMessage(true);
@@ -93,9 +96,12 @@ export default function contactForm() {
       // Reset form fields
       setName("");
       setEmail("");
+      setPhone("");
       setMessage("");
+      setCompany("");
+      setOrgnr("");
     }
-    console.log(name, email, phone, company, orgnr, message);
+    // console.log(name, email, phone, company, orgnr, message);
   };
 
   return (

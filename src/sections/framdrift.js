@@ -43,7 +43,7 @@ function framdrift({
             <p className="text-[#A29BFE] text-lg font-semibold">{dagerigjen}</p>
             <p>Dager igjen</p>
           </div>
-          <Link href="/#om">
+          <Link href="/#innsamling">
             <button className="p-4 bg-[#A29BFE] hidden lg:block text-white rounded-md">
               Doner her
             </button>
@@ -150,7 +150,7 @@ framdrift.defaultProps = {
   prosent: "0",
   totalsum: "228 500",
   dagerigjen: "60",
-  oppdatertsist: "19.10.2022 - 15:53",
+  oppdatertsist: "18.11.2022 - 12:53",
   /* husk å legg inn på value på progress også! */
 };
 

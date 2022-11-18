@@ -24,11 +24,11 @@ const Doner = () => {
         <div className="flex items-center justify-center">
           <p>eller</p>
         </div>
-        <div className="mx-0 md:mx-4 my-4 min-w-[300px] md:min-w-[440px]">
-          <div className="mb-4">
+        <div className="mx-0 md:mx-4 mb-4 min-w-[300px] md:min-w-[440px]">
+          {/*<div className="mb-4">
             <p className="font-semibold">Vi tar kontakt med deg!</p>
             <p></p>
-          </div>
+          </div>*/}
           <ContactForm />
         </div>
       </div>
