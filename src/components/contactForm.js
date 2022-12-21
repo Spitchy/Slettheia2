@@ -54,7 +54,7 @@ export default function contactForm() {
 
     if (isValidForm) {
       setButtonText("Sender");
-      const res = await fetch("https://slettheiaskole.vercel.app/api/sendgrid", {
+      const res = await fetch("https://slettheiaskole.vercel.app/apu/sendgrid", {
         body: JSON.stringify({
           email: email,
           name: name,
