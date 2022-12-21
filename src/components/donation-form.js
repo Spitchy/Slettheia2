@@ -232,9 +232,9 @@ const DonationForm = () => {
             ))}
           </Box>
           */}
-                <Button variant="primary" sx={styles.submit}>
-        Doner nå
-      </Button>
+          <Button variant="primary" sx={styles.submit}>
+            Doner nå
+          </Button>
         </Box>
             
       </Box>

@@ -13,10 +13,10 @@ app
   .then(() => {
     const server = express();
 
-    var client_id = "e1cdb4ca-3482-4641-8c44-944aa25de8e9";
-    var client_secret = "salXTPyO7-xL5umODr5TuavraJo=";
-    var Ocp_Apim_Subscription_Key = "f5b56ee3eabf4019977b990596c87b81";
-    var Merchant_Serial_Number = "260417";
+    var client_id = "3b92edd5-f73c-4ab6-97c8-a346b867d1ca";
+    var client_secret = "f-cB42A0pLMEMgcZe-i6KXcXKfl=";
+    var Ocp_Apim_Subscription_Key = "c4af94e33cdb40169cc52ccb54649d0e";
+    var Merchant_Serial_Number = "275662";
     var Vipps_System_Name = "postman";
     var Vipps_System_Version = "2.0";
     var Vipps_System_Plugin_Name = "vipps-postman";
@@ -163,10 +163,10 @@ async function getToket() {
       "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,OPTIONS",
       "Access-Control-Allow-Credentials": "true",
       CORS_SUPPORTS_CREDENTIALS: "true",
-      client_id: "e1cdb4ca-3482-4641-8c44-944aa25de8e9",
-      client_secret: "salXTPyO7-xL5umODr5TuavraJo=",
-      "Ocp-Apim-Subscription-Key": "f5b56ee3eabf4019977b990596c87b81",
-      "Merchant-Serial-Number": "260417",
+      client_id: "3b92edd5-f73c-4ab6-97c8-a346b867d1ca",
+      client_secret: "f-cB42A0pLMEMgcZe-i6KXcXKfl=",
+      "Ocp-Apim-Subscription-Key": "c4af94e33cdb40169cc52ccb54649d0e",
+      "Merchant-Serial-Number": "275662",
     },
   });
   const data = await response.json();
