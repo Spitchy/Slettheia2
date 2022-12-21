@@ -71,7 +71,7 @@ const DonationForm = () => {
       setError({
         ...error,
         status: true,
-        message: "Noe gikk galt! Prøv igjen senere! ",
+        message: "Noe gikk galt!! Prøv igjen senere! ",
       });
     }
   }
@@ -131,7 +131,7 @@ const DonationForm = () => {
         setError({
           ...error,
           status: true,
-          message: "Noe gikk galt! Prøv igjen senere",
+          message: "Noe gikk galt!!! Prøv igjen senere",
         });
       }
     }

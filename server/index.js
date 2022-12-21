@@ -124,7 +124,7 @@ app
     process.exit(1);
   });
 
-async function getToket() {
+async function getToken() {
   var status = { status: false };
 
   // var headers = {
