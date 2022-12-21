@@ -14,7 +14,7 @@ app
     const server = express();
 
     var client_id = "3b92edd5-f73c-4ab6-97c8-a346b867d1ca";
-    var client_secret = "f-cB42A0pLMEMgcZe-i6KXcXKfl=";
+    var client_secret = "f-cB42A0pLMEMgcZe-i6KXcXKfI=";
     var Ocp_Apim_Subscription_Key = "c4af94e33cdb40169cc52ccb54649d0e";
     var Merchant_Serial_Number = "275662";
     var Vipps_System_Name = "postman";
@@ -125,7 +125,7 @@ app
     process.exit(1);
   });
 //hvorfor het denne getToket før
-async function getToken() {
+async function getToket() {
   var status = { status: false };
 
   // var headers = {
