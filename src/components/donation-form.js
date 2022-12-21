@@ -57,12 +57,13 @@ const DonationForm = () => {
           setToken(data.data.access_token);
           localStorage.setItem("token", data.data.access_token);
           getLandingPageUrl("0", state.amount * 100, data.data.access_token);
-          // Router.push({
-          //     pathname: '/vippsPayment',
-          //     query:{
-          //         amount : state.amount
-          //     }
-          // })
+          // dette har vært skjult tidligere
+            Router.push({
+               pathname: '/vippsPayment',
+               query:{
+                   amount : state.amount
+               }
+           })
           // 100 200 500 1000 5000
         }
       }
