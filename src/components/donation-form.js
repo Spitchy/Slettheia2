@@ -207,13 +207,14 @@ const DonationForm = () => {
         >
           {error.message}
         </Message>
-        {/*
+        
         <Box
           as="form"
           sx={styles.form}
           onSubmit={handleSubmit}
           style={!loader ? { display: "block" } : { display: "none" }}
         >
+          {/*
           <Box sx={styles.presetAmounts}>
             {presetAmounts.map((amount, i) => (
               <Label
@@ -230,12 +231,13 @@ const DonationForm = () => {
               </Label>
             ))}
           </Box>
-        </Box>
-            */}
-      </Box>
-      <Button variant="primary" sx={styles.submit}>
+          */}
+                <Button variant="primary" sx={styles.submit}>
         Doner nå
       </Button>
+        </Box>
+            
+      </Box>
       <Text
         sx={styles.subtitle2}
         style={!loader ? { display: "block" } : { display: "none" }}
