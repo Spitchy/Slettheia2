@@ -48,7 +48,7 @@ const DonationForm = () => {
         ...error,
         status: false,
       });
-      const res = await fetch("https://slettheiaskole.vercel.app/api/getToken", {
+      const res = await fetch('/api/getToken', {
         method: "GET",
       });
       const data = await res.json();
