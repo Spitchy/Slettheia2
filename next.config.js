@@ -1,5 +1,6 @@
 const withPlugins = require("next-compose-plugins");
 const optimizedImages = require("next-optimized-images");
+const { GrConfigure } = require("react-icons/gr");
 
 const nextConfiguration = {
   target: "serverless", //will output independent pages that don't require a monolithic server. It's only compatible with next start or Serverless deployment platforms (like ZEIT Now) — you cannot use the custom server API.
@@ -15,6 +16,13 @@ module.exports = withPlugins([optimizedImages], nextConfiguration);
 //     SubscriptionKey: 'f5b56ee3eabf4019977b990596c87b81'
 //   },
 // });
+
+if (typeof nextRuntime === "undefined") {
+    config.resolve.fallback = {
+      ...config.resolve.fallback,
+      fs: false,
+  };
+}
 
 // fra stackoverflow fiks av fs ?
 {
