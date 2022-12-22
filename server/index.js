@@ -22,7 +22,7 @@ app
     var Vipps_System_Plugin_Name = "vipps-postman";
     var Vipps_System_Plugin_Version = "2.0";
     var baseUrl = "https://slettheiaskole.vercel.app";
-    // var baseUrl = "http://localhost:3000";
+    //var baseUrl = "http://localhost:3000";
 
     // Get Token
     server.get("/api/getToken", (req, res) => {
