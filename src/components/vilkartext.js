@@ -40,7 +40,7 @@ Slettheiveien 22
 <br />
 <br />
 <br />
-<p className="font-light"><i>Sist oppdatert 17.11.22</i></p>
+<p className="font-light"><i>Sist oppdatert 04.01.23</i></p>
       </Text>
     </div>
   );
