@@ -17,12 +17,16 @@ module.exports = withPlugins([optimizedImages], nextConfiguration);
 //   },
 // });
 
+{/*
+
 if (typeof nextRuntime === "undefined") {
     config.resolve.fallback = {
       ...config.resolve.fallback,
       fs: false,
   };
 }
+
+*/}
 
 // fra stackoverflow fiks av fs ?
 {

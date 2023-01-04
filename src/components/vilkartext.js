@@ -13,10 +13,11 @@ function vilkar() {
       <p>slettheiaskole.no er driftet av Foreldreutvalget (FAU) på Slettheia skole. For å enkelt nå ut til givere så har vi satt opp denne løsningen for å samle inn penger for å kunne oppgradere uteområdet på Slettheia skole. Pengene som samles inn går uavkortet til formålet, og FAU er dugnadsbasert.</p>
 <br />
       <p className="font-bold">Parter:</p>
-      <p>Slettheia skole FAU
+      <p>Kristiansand Kommune</p>
+     <p> 
 Slettheiveien 22
 4626 Kristiansand</p>
-<p>Organisasjonsnummer: 974 598 604</p>
+<p>Organisasjonsnummer: 820 852 982</p>
 
 <p>Epost: fau@slettheiaskole.no</p>
 <p>Telefonnummer: 977 47000 (FAU leder Joachim Nygaard)</p>
